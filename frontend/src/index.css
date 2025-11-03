@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -71,21 +73,15 @@ body {
 /* RTL/LTR Support */
 * {
     direction: var(--direction, ltr);
-    text-align: var(--text-align, left);
 }
 
 html[dir="rtl"] {
     --direction: rtl;
-    --text-align: right;
 }
 
 html[dir="ltr"] {
     --direction: ltr;
-    --text-align: left;
 }
-
-/* Arabic Font Support */
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
 
 html[dir="rtl"] body {
     font-family: 'Cairo', 'Inter', sans-serif;
