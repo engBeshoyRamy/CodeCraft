@@ -7,38 +7,38 @@ const Pricing = () => {
 
     const plans = [
         {
-            name: language === 'ar' ? 'البداية' : 'Starter',
+            name: language === 'ar' ? 'مبتدئ' : 'Starter',
             description: language === 'ar' ? 'مثالي للمبتدئين' : 'Perfect for beginners',
             price: 4900,
             sessions: language === 'ar' ? 'جلسة واحدة أسبوعياً' : '1 session weekly',
             features: language === 'ar'
                 ? ['جلسة واحدة في الأسبوع', 'ساعة واحدة لكل جلسة', 'جلسة فردية VIP', 'شهادة إتمام']
-                : ['1 session weekly', '1 hour per session', 'VIP 1-on-1 session', 'Certificate of completion']
+                : ['1 session weekly', '1 hour per session', 'VIP 1-to-1 session', 'Certificate of completion']
         },
         {
-            name: language === 'ar' ? 'النمو' : 'Growth',
+            name: language === 'ar' ? 'متوسط' : 'Growth',
             description: language === 'ar' ? 'للطلاب المتقدمين' : 'For advancing students',
             price: 8500,
-            sessions: language === 'ar' ? 'جلستين أسبوعياً' : '2 sessions weekly',
+            sessions: language === 'ar' ? 'جلسة واحدة أسبوعياً' : '1 session weekly',
             popular: true,
             features: language === 'ar'
                 ? ['جلستين في الأسبوع', 'ساعة واحدة لكل جلسة', 'جلسات فردية VIP', 'مشاريع عملية', 'دعم أولوي', 'شهادة وشارة']
-                : ['2 sessions weekly', '1 hour per session', 'VIP 1-on-1 sessions', 'Project portfolio', 'Priority support', 'Certificate & badge']
+                : ['1 session weekly', '1 hour per session', 'VIP 1-on-1 sessions', 'Project portfolio', 'Priority support', 'Certificate & badge']
         },
         {
             name: language === 'ar' ? 'احترافي' : 'Pro',
             description: language === 'ar' ? 'للمبرمجين الجادين' : 'Intensive learning',
             price: 13900,
-            sessions: language === 'ar' ? 'ثلاث جلسات أسبوعياً' : '3 sessions weekly',
+            sessions: language === 'ar' ? 'جلسة واحدة أسبوعياً' : '1 session weekly',
             features: language === 'ar'
                 ? ['ثلاث جلسات في الأسبوع', 'ساعة واحدة لكل جلسة', 'جلسات VIP شخصية', 'مشاريع متقدمة', 'توجيه مهني', 'شهادة وتوصيات']
-                : ['3 sessions weekly', '1 hour per session', 'VIP personalized attention', 'Advanced projects', 'Career guidance', 'Certificate & recommendations']
+                : ['1 session weekly', '1 hour per session', 'VIP personalized attention', 'Advanced projects', 'Career guidance', 'Certificate & recommendations']
         }
     ];
 
     const faqs = [
         {
-            question: language === 'ar' ? 'لماذا VIP فردي فقط؟' : 'Why VIP 1-on-1 only?',
+            question: language === 'ar' ? 'لماذا VIP فردي فقط؟' : 'Why VIP 1-to-1 only?',
             answer: language === 'ar'
                 ? 'نؤمن بأن كل طفل يتعلم بشكل مختلف. الجلسات الفردية تضمن اهتماماً شخصياً وتقدماً أسرع.'
                 : 'We believe every child learns differently. One-on-one sessions ensure personalized attention and faster progress.'
@@ -74,7 +74,7 @@ const Pricing = () => {
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         {language === 'ar'
                             ? 'جميع خططنا جلسات فردية VIP. ساعة واحدة أسبوعياً مع مدربك الشخصي!'
-                            : 'All our plans are VIP 1-on-1 sessions. One hour per week with your personal instructor!'}
+                            : 'All our plans are VIP 1-to-1 sessions. One hour per week with your personal instructor!'}
                     </p>
                 </div>
 
@@ -146,7 +146,7 @@ const Pricing = () => {
                 {/* Why VIP */}
                 <div className="bg-white rounded-3xl p-12 shadow-lg mb-16 animate-fade-in">
                     <h2 className="text-3xl font-bold text-center mb-12">
-                        {language === 'ar' ? 'لماذا الجلسات الفردية VIP؟' : 'Why VIP 1-on-1 Sessions?'}
+                        {language === 'ar' ? 'لماذا الجلسات الفردية VIP؟' : 'Why VIP 1-to-1 Sessions?'}
                     </h2>
                     <div className="grid md:grid-cols-4 gap-8">
                         {[

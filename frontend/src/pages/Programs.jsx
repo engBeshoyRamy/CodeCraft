@@ -8,7 +8,7 @@ const Programs = () => {
 
     const ranks = {
         iron: {
-            name: language === 'ar' ? '⚙️ رتبة الحديد' : '⚙️ Iron Rank',
+            name: language === 'ar' ? '⚙️ الحديد' : '⚙️ Iron Rank',
             age: language === 'ar' ? '6-9 سنوات' : '6-9 years',
             level: language === 'ar' ? 'مبتدئ' : 'Beginner',
             description: language === 'ar'
@@ -21,7 +21,7 @@ const Programs = () => {
             color: 'from-orange-400 to-orange-500'
         },
         stone: {
-            name: language === 'ar' ? '🪨 رتبة الحجر' : '🪨 Stone Rank',
+            name: language === 'ar' ? '🪨 الحجر' : '🪨 Stone Rank',
             age: language === 'ar' ? '9-12 سنة' : '9-12 years',
             level: language === 'ar' ? 'متوسط' : 'Intermediate',
             description: language === 'ar'
@@ -34,7 +34,7 @@ const Programs = () => {
             color: 'from-gray-400 to-gray-500'
         },
         gold: {
-            name: language === 'ar' ? '🥇 رتبة الذهب' : '🥇 Gold Rank',
+            name: language === 'ar' ? '🥇  الذهب' : '🥇 Gold Rank',
             age: language === 'ar' ? '12-15 سنة' : '12-15 years',
             level: language === 'ar' ? 'متقدم' : 'Advanced',
             description: language === 'ar'
@@ -47,7 +47,7 @@ const Programs = () => {
             color: 'from-yellow-400 to-yellow-500'
         },
         diamond: {
-            name: language === 'ar' ? '💎 رتبة الماس' : '💎 Diamond Rank',
+            name: language === 'ar' ? '💎  الماس' : '💎 Diamond Rank',
             age: language === 'ar' ? '15-18 سنة' : '15-18 years',
             level: language === 'ar' ? 'خبير' : 'Expert',
             description: language === 'ar'
@@ -69,17 +69,17 @@ const Programs = () => {
                 {/* Header */}
                 <div className="text-center mb-16 animate-fade-in">
                     <h1 className="text-5xl font-bold mb-4">
-                        {language === 'ar' ? 'رتب التعلم لدينا' : 'Our Learning Ranks'}
+                        {language === 'ar' ? 'مستويات التعلم لدينا' : 'Our Learning Ranks'}
                     </h1>
                     <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                         {language === 'ar'
-                            ? 'تقدم عبر 4 رتب من المبتدئ إلى المتقدم. كل رتبة برنامج كامل لمدة سنة!'
+                            ? 'تقدم عبر 4 مستويات من المبتدئ إلى المتقدم. كل مستوي برنامج كامل لمدة سنة!'
                             : 'Progress through 4 ranks from beginner to advanced. Each rank is a complete 1-year program!'}
                     </p>
                     <p className="text-lg text-gray-500 mt-4">
                         {language === 'ar'
                             ? 'ساعة واحدة أسبوعيًا • مباشر 1-1 • مطلوب لابتوب + كاميرا'
-                            : '1 hour weekly • Live 1-on-1 • Laptop + Camera Required'}
+                            : '1 hour weekly • Live 1-to-1 • Laptop + Camera Required'}
                     </p>
                 </div>
 
@@ -140,7 +140,7 @@ const Programs = () => {
                 {/* All Ranks Preview */}
                 <div className="mb-16">
                     <h2 className="text-3xl font-bold text-center mb-12">
-                        {language === 'ar' ? 'جميع الرتب' : 'All Ranks Overview'}
+                        {language === 'ar' ? 'جميع المستويات' : 'All Ranks Overview'}
                     </h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {Object.entries(ranks).map(([key, rank]) => (
@@ -163,18 +163,18 @@ const Programs = () => {
                 {/* CTA */}
                 <div className="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-center text-white animate-fade-in">
                     <h2 className="text-3xl font-bold mb-4">
-                        {language === 'ar' ? 'غير متأكد من أي رتبة تبدأ؟' : 'Not sure which rank to start?'}
+                        {language === 'ar' ? 'غير متأكد من أي مستوي تبدأ؟' : 'Not sure which rank to start?'}
                     </h2>
                     <p className="text-xl mb-8 opacity-90">
                         {language === 'ar'
-                            ? 'احجز استشارة مجانية وسنساعدك في اختيار الرتبة المثالية لطفلك!'
+                            ? 'احجز استشارة مجانية وسنساعدك في اختيار المستوي المثالية لطفلك!'
                             : 'Book a free consultation and we will help you choose the perfect rank for your child!'}
                     </p>
                     <Link
                         to="/booking"
                         className="inline-block bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transform hover:scale-105 transition"
                     >
-                        {language === 'ar' ? 'احجز استشارة مجانية' : 'Book Free Consultation'}
+                        {language === 'ar' ? 'احجز جلسة مجانية' : 'Book Free Consultation'}
                     </Link>
                 </div>
             </div>
